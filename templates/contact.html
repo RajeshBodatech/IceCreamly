@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - IceCreamly
+{% endblock title %}
+
+{% block body %}
+<!-- Hero Section with Background -->
+<div class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 300px;">
+    <div class="position-absolute w-100 h-100" style="background: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"grain\" width=\"100\" height=\"100\" patternUnits=\"userSpaceOnUse\"><circle cx=\"25\" cy=\"25\" r=\"1\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"75\" cy=\"75\" r=\"1\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"50\" cy=\"10\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"10\" cy=\"60\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"90\" cy=\"40\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23grain)\"/></svg></div>
+    <div class="container-fluid py-5 position-relative">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-4 fw-bold text-white mb-3">Get in Touch</h1>
+                <p class="lead text-white-50 mb-4">We'd love to hear from you! Whether you have a question about our ice cream, want to place an order, or just want to say hello, we're here to help.</p>
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                    <div class="d-flex align-items-center text-white">
+                        <i class="fas fa-phone me-2"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white">
+                        <i class="fas fa-envelope me-2"></i>
+                        <span>hello@icecreamly.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg" 
+                     class="img-fluid rounded-3 shadow-lg" 
+                     alt="Contact Us" 
+                     style="max-height: 250px; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form Section -->
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-lg" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-primary mb-2">Send us a Message</h2>
+                    </div>
+                    
+                    <form action="/contact" method="post">
+                        {% csrf_token %}
+                        <div class="mb-4">
+                            <label for="name" class="form-label fw-semibold text-dark">Full Name</label>
+                            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="John Doe" style="border: 2px solid #e9ecef; border-radius: 10px;">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label fw-semibold text-dark">Email address</label>
+                            <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="name@example.com" style="border: 2px solid #e9ecef; border-radius: 10px;">
+                        </div>
+                        <div class="mb-4">
+                            <label for="desc" class="form-label fw-semibold text-dark">Message</label>
+                            <textarea class="form-control form-control-lg" id="desc" name="desc" rows="5" placeholder="Tell us about your inquiry..." style="border: 2px solid #e9ecef; border-radius: 10px;"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg px-5 py-3 fw-bold" type="submit" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Additional Contact Information -->
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Visit Our Store</h5>
+                        <p class="text-muted mb-0">123 Ice Cream Street<br>Dessert City, DC 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-clock fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Opening Hours</h5>
+                        <p class="text-muted mb-0">Mon-Fri: 10AM - 10PM<br>Sat-Sun: 11AM - 11PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-phone fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Call Us</h5>
+                        <p class="text-muted mb-0">+1 (555) 123-4567<br>Available 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark mb-3">Frequently Asked Questions</h2>
+            <p class="lead text-muted">Find answers to common questions about our services</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="faq1">
+                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Do you offer delivery services?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Yes! We offer delivery within a 10-mile radius of our store. Orders over $25 qualify for free delivery, otherwise there's a $5 delivery fee.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="faq2">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Can you accommodate dietary restrictions?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Absolutely! We offer dairy-free, gluten-free, and vegan options. We also have sugar-free varieties for those with dietary restrictions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 shadow-sm mb-3">
+                        <h2 class="accordion-header" id="faq3">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Do you cater for events and parties?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Yes! We provide catering services for birthdays, corporate events, and special occasions. We can customize flavors and create beautiful ice cream displays.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Map Section -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark mb-3">Find Us</h2>
+        <p class="lead text-muted">Visit our store and experience the magic of IceCreamly</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-0">
+                    <div class="ratio ratio-21x9">
+                        <div class="d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="text-center text-white">
+                                <i class="fas fa-map-marked-alt fa-4x mb-3"></i>
+                                <h4 class="fw-bold mb-2">123 Ice Cream Street</h4>
+                                <p class="mb-0">Dessert City, DC 12345</p>
+                                <p class="mb-0">United States</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action Section -->
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container text-center">
+        <h2 class="fw-bold text-white mb-3">Ready to Experience the Best Ice Cream?</h2>
+        <p class="lead text-white-50 mb-4">Join thousands of happy customers who choose IceCreamly for their sweet cravings</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="/" class="btn btn-light btn-lg px-4 py-3 fw-bold">
+                <i class="fas fa-home me-2"></i>Visit Our Store
+            </a>
+            <a href="tel:+15551234567" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold">
+                <i class="fas fa-phone me-2"></i>Call Now
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock body %}

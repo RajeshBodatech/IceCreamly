@@ -1,0 +1,311 @@
+{% extends 'base.html' %}
+
+{% block title %}Softy Services - IceCreamly
+{% endblock title %}
+
+{% block body %}
+<!-- Hero Section -->
+<div class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); min-height: 400px;">
+    <div class="position-absolute w-100 h-100" style="background: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"grain\" width=\"100\" height=\"100\" patternUnits=\"userSpaceOnUse\"><circle cx=\"25\" cy=\"25\" r=\"1\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"75\" cy=\"75\" r=\"1\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"50\" cy=\"10\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"10\" cy=\"60\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"90\" cy=\"40\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23grain)\"/></svg></div>
+    <div class="container-fluid py-5 position-relative">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-4 fw-bold text-white mb-3">Premium Softy Services</h1>
+                <p class="lead text-white-50 mb-4">Experience the perfect swirl of creamy soft serve ice cream with our premium softy services. Smooth, delicious, and always fresh!</p>
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-star me-1"></i>Fresh Daily
+                    </span>
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-magic me-1"></i>Custom Toppings
+                    </span>
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-heart me-1"></i>Made Fresh
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="https://images.pexels.com/photos/1352281/pexels-photo-1352281.jpeg" 
+                     class="img-fluid rounded-3 shadow-lg" 
+                     alt="Soft Serve Ice Cream" 
+                     style="max-height: 300px; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Softy Features Section -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark mb-3">Our Softy Collection</h2>
+        <p class="lead text-muted">Discover our range of premium soft serve ice cream options</p>
+    </div>
+    
+    <div class="row g-4">
+        <!-- Classic Vanilla -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-warning bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-ice-cream fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Classic Vanilla</h4>
+                    <p class="text-muted mb-4">Our signature vanilla soft serve - creamy, smooth, and perfectly sweet. The foundation for all our softy creations.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Rich & Creamy Texture</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Natural Vanilla Flavor</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Perfect Swirl</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Available in All Sizes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chocolate Swirl -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-danger bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-ice-cream fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Chocolate Swirl</h4>
+                    <p class="text-muted mb-4">Rich chocolate soft serve swirled with our classic vanilla. A perfect blend of flavors for chocolate lovers.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Premium Chocolate</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Perfect Swirl Pattern</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Rich & Indulgent</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Chocolate Lover's Dream</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strawberry Delight -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-info bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-ice-cream fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Strawberry Delight</h4>
+                    <p class="text-muted mb-4">Fresh strawberry soft serve with real fruit pieces. Light, refreshing, and perfect for summer days.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Real Strawberry Pieces</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Refreshing Flavor</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Natural Ingredients</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Perfect for Summer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mint Chocolate Chip -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-success bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-ice-cream fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Mint Chocolate Chip</h4>
+                    <p class="text-muted mb-4">Cool mint soft serve with chocolate chips. A refreshing treat that's both cooling and indulgent.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cool Mint Flavor</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Chocolate Chips</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Refreshing Taste</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Perfect Balance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Coffee Crunch -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-secondary bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-ice-cream fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Coffee Crunch</h4>
+                    <p class="text-muted mb-4">Rich coffee-flavored soft serve with crunchy coffee beans. Perfect for coffee enthusiasts.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Premium Coffee Flavor</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Crunchy Coffee Beans</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Rich & Bold</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Coffee Lover's Choice</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Mix -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-primary bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-magic fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Custom Mix</h4>
+                    <p class="text-muted mb-4">Create your own unique soft serve combination! Mix any flavors and add your favorite toppings.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Mix Any Flavors</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom Toppings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Personalized Creation</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Endless Possibilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toppings Section -->
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark mb-3">Premium Toppings</h2>
+            <p class="lead text-muted">Enhance your softy experience with our selection of premium toppings</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <i class="fas fa-cookie-bite fa-3x text-warning mb-3"></i>
+                        <h5 class="fw-bold mb-2">Sprinkles & Candies</h5>
+                        <p class="text-muted mb-0">Colorful sprinkles, chocolate chips, and candy pieces to add fun and flavor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <i class="fas fa-apple-alt fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold mb-2">Fresh Fruits</h5>
+                        <p class="text-muted mb-0">Fresh strawberries, bananas, and other seasonal fruits for a healthy twist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <i class="fas fa-cookie fa-3x text-danger mb-3"></i>
+                        <h5 class="fw-bold mb-2">Cookies & Brownies</h5>
+                        <p class="text-muted mb-0">Crumbled cookies, brownie pieces, and cookie dough for extra indulgence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <i class="fas fa-crown fa-3x text-warning mb-3"></i>
+                        <h5 class="fw-bold mb-2">Premium Sauces</h5>
+                        <p class="text-muted mb-0">Hot fudge, caramel, strawberry, and other premium sauces to drizzle on top.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark mb-3">Softy Pricing</h2>
+        <p class="lead text-muted">Affordable prices for our premium soft serve ice cream</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+        <div class="col-lg-3">
+            <div class="card border-0 shadow-lg h-100">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold text-primary mb-3">Small</h4>
+                    <div class="mb-4">
+                        <span class="display-6 fw-bold text-dark">$2.99</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Single Flavor</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>1 Topping</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Regular Cone</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg w-100">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card border-0 shadow-lg h-100" style="border: 3px solid #ff9a9e !important;">
+                <div class="card-body p-4 text-center">
+                    <div class="badge bg-primary mb-3">Most Popular</div>
+                    <h4 class="fw-bold text-primary mb-3">Medium</h4>
+                    <div class="mb-4">
+                        <span class="display-6 fw-bold text-dark">$4.49</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Dual Flavor</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2 Toppings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Waffle Cone</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg w-100">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card border-0 shadow-lg h-100">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold text-primary mb-3">Large</h4>
+                    <div class="mb-4">
+                        <span class="display-6 fw-bold text-dark">$5.99</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Triple Flavor</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>3 Toppings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Premium Cone</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg w-100">Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card border-0 shadow-lg h-100">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold text-primary mb-3">Family Size</h4>
+                    <div class="mb-4">
+                        <span class="display-6 fw-bold text-dark">$12.99</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>4 Servings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>All Toppings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Special Container</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg w-100">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+    <div class="container text-center">
+        <h2 class="fw-bold text-white mb-3">Ready for a Softy Treat?</h2>
+        <p class="lead text-white-50 mb-4">Visit us today and experience the perfect swirl of creamy soft serve</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="/contact" class="btn btn-light btn-lg px-4 py-3 fw-bold">
+                <i class="fas fa-map-marker-alt me-2"></i>Find Us
+            </a>
+            <a href="tel:+15551234567" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold">
+                <i class="fas fa-phone me-2"></i>Call Now
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock body %} 

@@ -1,0 +1,303 @@
+{% extends 'base.html' %}
+
+{% block title %}Our Services - IceCreamly
+{% endblock title %}
+
+{% block body %}
+<!-- Hero Section -->
+<div class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 400px;">
+    <div class="position-absolute w-100 h-100" style="background: url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 100 100\"><defs><pattern id=\"grain\" width=\"100\" height=\"100\" patternUnits=\"userSpaceOnUse\"><circle cx=\"25\" cy=\"25\" r=\"1\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"75\" cy=\"75\" r=\"1\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"50\" cy=\"10\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"10\" cy=\"60\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/><circle cx=\"90\" cy=\"40\" r=\"0.5\" fill=\"rgba(255,255,255,0.1)\"/></pattern></defs><rect width=\"100\" height=\"100\" fill=\"url(%23grain)\"/></svg></div>
+    <div class="container-fluid py-5 position-relative">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-4 fw-bold text-white mb-3">Our Premium Services</h1>
+                <p class="lead text-white-50 mb-4">Discover the full range of our ice cream services designed to satisfy every sweet craving and create unforgettable moments.</p>
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-star me-1"></i>Premium Quality
+                    </span>
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-truck me-1"></i>Fast Delivery
+                    </span>
+                    <span class="badge bg-light text-dark px-3 py-2">
+                        <i class="fas fa-heart me-1"></i>Made with Love
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="https://images.pexels.com/photos/1352281/pexels-photo-1352281.jpeg" 
+                     class="img-fluid rounded-3 shadow-lg" 
+                     alt="Ice Cream Services" 
+                     style="max-height: 300px; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Services Section -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark mb-3">What We Offer</h2>
+        <p class="lead text-muted">From classic scoops to custom creations, we have everything you need for the perfect ice cream experience</p>
+    </div>
+    
+    <div class="row g-4">
+        <!-- Retail Ice Cream -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-primary bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-ice-cream fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Retail Ice Cream</h4>
+                    <p class="text-muted mb-4">Enjoy our premium ice cream scoops in-store with over 50 unique flavors to choose from. Perfect for a quick treat or leisurely dessert experience.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>50+ Unique Flavors</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Fresh Daily Made</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Customizable Toppings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Family-Friendly Environment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catering Services -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-success bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-birthday-cake fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Catering Services</h4>
+                    <p class="text-muted mb-4">Make your events unforgettable with our professional catering services. Perfect for birthdays, corporate events, weddings, and special celebrations.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom Ice Cream Bars</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Event Planning Support</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Professional Staff</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Flexible Menu Options</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delivery Services -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-warning bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-truck fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Delivery Services</h4>
+                    <p class="text-muted mb-4">Get your favorite ice cream delivered right to your doorstep. Fast, reliable delivery within a 10-mile radius with special packaging to maintain freshness.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>10-Mile Delivery Radius</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Free Delivery Over $25</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Insulated Packaging</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Real-Time Tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Custom Flavors -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-info bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-magic fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Custom Flavors</h4>
+                    <p class="text-muted mb-4">Create your own unique ice cream flavor! Our expert team will work with you to develop personalized flavors for special occasions or business needs.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Personalized Recipes</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Brand Integration</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Quality Testing</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Bulk Production</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ice Cream Cakes -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-danger bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-cake fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Ice Cream Cakes</h4>
+                    <p class="text-muted mb-4">Celebrate special occasions with our custom ice cream cakes. Beautiful designs, delicious flavors, and perfect for any celebration.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom Designs</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Multiple Flavors</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Personalized Decorations</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Advance Ordering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corporate Services -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card border-0 shadow-lg h-100" style="background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);">
+                <div class="card-body p-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-secondary bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <i class="fas fa-building fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <h4 class="fw-bold mb-3">Corporate Services</h4>
+                    <p class="text-muted mb-4">Elevate your corporate events with our professional ice cream services. Perfect for team building, client meetings, and company celebrations.</p>
+                    <ul class="list-unstyled text-start">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Office Catering</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Branded Ice Cream</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Event Coordination</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Flexible Scheduling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Special Features Section -->
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-white mb-3">Why Choose Our Services?</h2>
+            <p class="lead text-white-50">We go above and beyond to ensure every experience is exceptional</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <i class="fas fa-leaf fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold mb-2">Fresh Ingredients</h5>
+                        <p class="text-muted mb-0">We use only the finest, locally-sourced ingredients for the best taste and quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold mb-2">Quick Service</h5>
+                        <p class="text-muted mb-0">Fast, efficient service without compromising on quality or customer experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <i class="fas fa-heart fa-3x text-danger mb-3"></i>
+                        <h5 class="fw-bold mb-2">Made with Love</h5>
+                        <p class="text-muted mb-0">Every scoop is crafted with passion and attention to detail for the perfect taste.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card border-0 shadow-sm h-100" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <i class="fas fa-award fa-3x text-warning mb-3"></i>
+                        <h5 class="fw-bold mb-2">Award Winning</h5>
+                        <p class="text-muted mb-0">Recognized for excellence in taste, service, and customer satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-dark mb-3">Service Pricing</h2>
+        <p class="lead text-muted">Transparent pricing for all our premium services</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-lg h-100">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold text-primary mb-3">Basic Catering</h4>
+                    <div class="mb-4">
+                        <span class="display-6 fw-bold text-dark">$150</span>
+                        <span class="text-muted">/event</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Up to 50 servings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>3 flavor options</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Basic setup</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>2-hour service</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg w-100">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-lg h-100" style="border: 3px solid #667eea !important;">
+                <div class="card-body p-4 text-center">
+                    <div class="badge bg-primary mb-3">Most Popular</div>
+                    <h4 class="fw-bold text-primary mb-3">Premium Catering</h4>
+                    <div class="mb-4">
+                        <span class="display-6 fw-bold text-dark">$300</span>
+                        <span class="text-muted">/event</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Up to 100 servings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>5 flavor options</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Professional setup</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>4-hour service</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom decorations</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg w-100">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-lg h-100">
+                <div class="card-body p-4 text-center">
+                    <h4 class="fw-bold text-primary mb-3">Luxury Catering</h4>
+                    <div class="mb-4">
+                        <span class="display-6 fw-bold text-dark">$500</span>
+                        <span class="text-muted">/event</span>
+                    </div>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Unlimited servings</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>All flavor options</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Full event coordination</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>6-hour service</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom ice cream bar</li>
+                    </ul>
+                    <button class="btn btn-primary btn-lg w-100">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="container-fluid py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container text-center">
+        <h2 class="fw-bold text-white mb-3">Ready to Experience Our Services?</h2>
+        <p class="lead text-white-50 mb-4">Contact us today to discuss your needs and get a personalized quote</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="/contact" class="btn btn-light btn-lg px-4 py-3 fw-bold">
+                <i class="fas fa-envelope me-2"></i>Get a Quote
+            </a>
+            <a href="tel:+15551234567" class="btn btn-outline-light btn-lg px-4 py-3 fw-bold">
+                <i class="fas fa-phone me-2"></i>Call Now
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock body %}
